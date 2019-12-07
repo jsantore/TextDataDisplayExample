@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="753.0" prefWidth="1083.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bsu.comp152.DataDisplayDemo">
+   <children>
+      <HBox layoutX="2.0" layoutY="-4.0" prefHeight="753.0" prefWidth="1077.0">
+         <children>
+            <VBox prefHeight="753.0" prefWidth="369.0">
+               <children>
+                  <Label prefHeight="95.0" prefWidth="368.0" text="Type the ID of the person and I'll load their data:" textFill="#2511bf" wrapText="true">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="105.0" prefWidth="114.0" text="ID:" wrapText="true">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="inputName" prefHeight="99.0" prefWidth="254.0" />
+                     </children>
+                  </HBox>
+                  <Button mnemonicParsing="false" onAction="#loadData" prefHeight="145.0" prefWidth="252.0" text="Load Data">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <GridPane prefHeight="753.0" prefWidth="733.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="333.0" minWidth="10.0" prefWidth="333.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="300.0" minWidth="5.0" prefWidth="300.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="245.0" minHeight="10.0" prefHeight="123.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="371.0" minHeight="10.0" prefHeight="139.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="520.0" minHeight="10.0" prefHeight="120.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="520.0" minHeight="10.0" prefHeight="203.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="520.0" minHeight="10.0" prefHeight="195.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label prefHeight="49.0" prefWidth="285.0" text="Name:" textAlignment="RIGHT" />
+                  <TextField fx:id="NameField" prefHeight="61.0" prefWidth="355.0" GridPane.columnIndex="1" />
+                  <Label prefHeight="43.0" prefWidth="333.0" text="Culture:" textAlignment="RIGHT" GridPane.rowIndex="1" />
+                  <TextField fx:id="CultureField" prefHeight="76.0" prefWidth="300.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label prefHeight="47.0" prefWidth="326.0" text="Born" GridPane.rowIndex="2" />
+                  <Label prefHeight="77.0" prefWidth="333.0" text="Title:" GridPane.rowIndex="3" />
+                  <TextField fx:id="BornField" prefHeight="54.0" prefWidth="300.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="TitleField" prefHeight="79.0" prefWidth="300.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label prefHeight="46.0" prefWidth="341.0" text="First allegiance" GridPane.rowIndex="4" />
+                  <TextField prefHeight="64.0" prefWidth="300.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+               </children>
+            </GridPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
