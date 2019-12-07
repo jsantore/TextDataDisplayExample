@@ -30,7 +30,5 @@ public class DataDisplayDemo extends Application {
         primaryStage.show();
     }
 
-    public void loadData(ActionEvent event){
 
-    }
 }
